@@ -1,4 +1,4 @@
-function calculateTip() {
+function tipCalc() {
     
   if (money === "" || service == 0) {
     alert("Nezadali ste hodnoty");
@@ -17,12 +17,12 @@ function calculateTip() {
      
     var total = (money * service) / numPeople;
     total = Math.round(total * 100) / 100;
-    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("totalTip");
     document.getElementById("tip").innerHTML = total;
   
   }
   
   document.getElementById("calc").onclick = function() {
-    calculateTip();
+    tipCalc();
   
   };
