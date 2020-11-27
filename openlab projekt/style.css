@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+  }
+
+.container-fluid {
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    height: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-row { 
+    display: flex;
+    text-align: center;
+}
+
+.tip-is-btn { 
+    margin: 10px;
+    border: lightgray solid 1px;
+    border-radius: 2px;
+}
+
+.tip-overall { 
+    font-size: 20px;
+}
+
+.tip { 
+    margin: 0px;
+}
+
+.each { 
+    margin: 0px;
+}
