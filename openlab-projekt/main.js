@@ -1,5 +1,5 @@
 function tipCalc() {
-    
+    //axios.defaults.baseURL = ''
   if (money === "" || service == 0) {
     alert("Nezadali ste hodnoty");
   }
@@ -19,10 +19,10 @@ function tipCalc() {
     total = Math.round(total * 100) / 100;
     document.getElementById("totalTip");
     document.getElementById("tip").innerHTML = total;
-  
+    axios.post('api/log', total.toString);
   }
   
   document.getElementById("calc").onclick = function() {
     tipCalc();
-  
   };
+
